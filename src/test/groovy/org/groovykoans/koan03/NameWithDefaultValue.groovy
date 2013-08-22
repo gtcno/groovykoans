@@ -20,8 +20,9 @@ class NameWithDefaultValue {
     String name
 
     // ------------ START EDITING HERE ----------------------
-
-
-    // ------------ STOP EDITING HERE  ----------------------
+    NameWithDefaultValue(String name ='Anonymous') {
+        this.name = name
+    }
+// ------------ STOP EDITING HERE  ----------------------
 
 }

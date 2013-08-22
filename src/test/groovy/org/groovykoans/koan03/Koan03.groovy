@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
- 
+
 package org.groovykoans.koan03
 
 /**
@@ -39,8 +39,8 @@ class Koan03 extends GroovyTestCase {
         def javaFirstName
         def groovyFirstName
         // ------------ START EDITING HERE ----------------------
-
-
+        javaFirstName = javaPerson.firstName
+        groovyFirstName = groovyPerson.firstName
         // ------------ STOP EDITING HERE  ----------------------
 
         assert javaFirstName == 'Argus'
@@ -54,9 +54,9 @@ class Koan03 extends GroovyTestCase {
         // Try to modify Ken's ssn. You should get a ReadOnlyPropertyException.
         def person = new GroovyPerson('Ken', 'Kousen', '7878')
         def failed = true
-        shouldFail (ReadOnlyPropertyException) {
+        shouldFail(ReadOnlyPropertyException) {
             // ------------ START EDITING HERE ----------------------
-
+            person.ssn = "hubaba"
 
             // ------------ STOP EDITING HERE  ----------------------
             failed = false
@@ -79,7 +79,7 @@ class Koan03 extends GroovyTestCase {
         // Create a SimpleGroovyBean using named arguments, to represent a transaction with -30 as its data.
         def transaction
         // ------------ START EDITING HERE ----------------------
-
+        transaction = new SimpleGroovyBean(data: -30)
 
         // ------------ STOP EDITING HERE  ----------------------
 
