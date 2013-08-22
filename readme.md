@@ -6,9 +6,9 @@ blocks, and gradually builds your knowledge towards metaprogramming, slurpers, a
 to offer.
 
 ## Getting Started ##
-1.  ~~ Make sure you have [JDK 1.6+][jdk] installed ~~
-2.  ~~ Download and unzip the [Koans][zip] (or clone the GitHub repository with `$ git clone https://github.com/nadavc/groovykoans.git`) ~~
-3.  ~~ Remove the solutions from the Koans using `$ ./gradlew removeSolutions` ~~
+1.  *DONE* Make sure you have [JDK 1.6+][jdk] installed
+2.  *DONE* Download and unzip the [Koans][zip] (or clone the GitHub repository with `$ git clone https://github.com/nadavc/groovykoans.git`)
+3.  *DONE* Remove the solutions from the Koans using `$ ./gradlew removeSolutions`
 4.  Execute Koan01 with `$ ./gradlew koan01` and fail (or any other Koan using `$ ./gradlew koan##`)
 5.  Fix code, and execute again
 6.  Keep going until you're fluent at Groovy :)
