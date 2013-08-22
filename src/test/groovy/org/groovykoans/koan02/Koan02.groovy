@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
- 
+
 package org.groovykoans.koan02
 
 /**
@@ -29,8 +29,8 @@ class Koan02 extends GroovyTestCase {
         def predicate2 = true
 
         // ------------ START EDITING HERE ----------------------
-
-
+        predicate1 = true
+        predicate2 = false
         // ------------ STOP EDITING HERE  ----------------------
 
         assert predicate1
@@ -43,7 +43,8 @@ class Koan02 extends GroovyTestCase {
         List<String> list = ['item']
 
         // ------------ START EDITING HERE ----------------------
-
+        map.put("string", "string")
+        list.clear()
 
         // ------------ STOP EDITING HERE  ----------------------
 
@@ -57,7 +58,8 @@ class Koan02 extends GroovyTestCase {
         String s2 = ''
 
         // ------------ START EDITING HERE ----------------------
-
+        s1 = null
+        s2 = 'hubba'
 
         // ------------ STOP EDITING HERE  ----------------------
 
@@ -70,11 +72,11 @@ class Koan02 extends GroovyTestCase {
 
     void test04_NumericTruth() {
         // Similar to C code, null or zeros are false. Any other number is true.
-        def balance = [ 2, -3, 6, 0, 5 ]
+        def balance = [2, -3, 6, 0, 5]
 
         // Remove (or change) the offending integer to continue
         // ------------ START EDITING HERE ----------------------
-
+        balance = balance.findAll { it }
 
         // ------------ STOP EDITING HERE  ----------------------
 
