@@ -85,7 +85,6 @@ class Koan06 extends GroovyTestCase {
         // ------------ START EDITING HERE ----------------------
 
         new File('src').eachFileRecurse(FileType.FILES) {
-            println it
             if (it.text.contains('Lorem'))
                 count++
         }
